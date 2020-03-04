@@ -16,6 +16,11 @@ class MyTestCase(unittest.TestCase):
         result = calculator.difference(1, 2)
         self.assertEqual(result, -1)
 
+    def test_calculator_return_fraction(self):
+        calculator = Calculator()
+        result = calculator.fraction(10, 5)
+        self.assertEqual(result, 2)
+
     def test_calculator_access_sum_result(self):
         calculator = Calculator()
         calculator.sum(1, 2)
@@ -25,6 +30,12 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         calculator.difference(1, 2)
         self.assertEqual(calculator.Result, -1)
+
+    def test_calculator_access_fraction_result(self):
+        calculator = Calculator()
+        calculator.fraction(10, 5)
+        self.assertEqual(calculator.Result, 2)
+
 
 if __name__ == '__main__':
     unittest.main()
