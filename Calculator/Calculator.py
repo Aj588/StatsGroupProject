@@ -1,4 +1,5 @@
 from MathOperations.addition import Addition
+from MathOperations.subtraction import Subtraction
 
 class Calculator:
     Result = 0
@@ -8,4 +9,8 @@ class Calculator:
 
     def sum(self, a, b):
         self.Result = Addition.sum(a, b)
+        return self.Result
+
+    def difference(self, a, b):
+        self.Result = Subtraction.difference(a, b)
         return self.Result
