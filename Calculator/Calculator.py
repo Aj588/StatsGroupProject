@@ -8,4 +8,4 @@ class Calculator:
 
     def sum(self, a, b):
         self.Result = Addition.sum(a, b)
-        returm self.Result
+        return self.Result
