@@ -1,5 +1,7 @@
 from MathOperations.addition import Addition
 from MathOperations.subtraction import Subtraction
+from MathOperations.division import Division
+
 
 class Calculator:
     Result = 0
@@ -13,4 +15,8 @@ class Calculator:
 
     def difference(self, a, b):
         self.Result = Subtraction.difference(a, b)
+        return self.Result
+
+    def fraction(self, a, b):
+        self.Result = Division.fraction(a, b)
         return self.Result
