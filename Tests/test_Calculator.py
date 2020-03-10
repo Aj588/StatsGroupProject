@@ -43,6 +43,5 @@ class MyTestCase(unittest.TestCase):
         calculator3.sum(calculator1.sum(1, 2), calculator2.difference(3, 4))
         self.assertEqual(2, calculator3.Result)
 
-
 if __name__ == '__main__':
     unittest.main()
