@@ -36,6 +36,13 @@ class MyTestCase(unittest.TestCase):
         calculator.fraction(10, 5)
         self.assertEqual(calculator.Result, 2)
 
+    def test_multiple_calculators(self):
+        calculator1 = Calculator()
+        calculator2 = Calculator()
+        calculator3 = Calculator()
+        calculator3.sum(calculator1.sum(1, 2), calculator2.difference(3, 4))
+        self.assertEqual(2, calculator3.Result)
+
 
 if __name__ == '__main__':
     unittest.main()
