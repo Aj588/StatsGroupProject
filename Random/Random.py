@@ -1,13 +1,11 @@
-from Random.random_Op import *
+from numpy.random import seed
+from numpy.random import randint
 
-class Random:
-    Result = 0
-
-    def Random_int_nums(self, a, b, c, d):
-        self.Result = Random_num.random_int_generator(a, b, c, seed_num=d)
-        return self.Result
-
-
-    def Random_float_nums(self, a, b, c, d):
-        self.Result = Random_num.random_float_generator(a, b, c, seed_num=d)
-        return self.Result
+def getRandomNums(seedNum, min, max, num):
+    seed(seedNum)
+    randomData = []
+    i = 1
+    while i < num + 1:
+        randomData.append(randint(min, max))
+        i += 1
+    return randomData

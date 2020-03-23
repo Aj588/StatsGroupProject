@@ -2,6 +2,8 @@ from MathOperations.addition import Addition
 from MathOperations.subtraction import Subtraction
 from MathOperations.division import Division
 from MathOperations.multiplication import Multiplication
+from MathOperations.root import Root
+
 
 
 class Calculator:
@@ -24,3 +26,7 @@ class Calculator:
 
     def product(self, a, b):
         self.Result = Multiplication.product(a, b)
+
+    def nthroot(self, a, b):
+        self.Result = Root.root(a, b)
+        return self.Result
