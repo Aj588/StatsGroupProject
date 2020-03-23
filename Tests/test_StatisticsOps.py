@@ -8,3 +8,5 @@ def test_StatisticsOps_variance(self):
 
 def test_StatisticOps_quartiles(self):
     self.assertEqual([12.75, 27.5, 72.25], Quartiles.quartiles(self.testData))
+
+
