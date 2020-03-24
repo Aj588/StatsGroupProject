@@ -3,8 +3,6 @@ from StatisticsOps.mean import Mean
 from StatisticsOps.mode import Mode
 from StatisticsOps.median import Median
 from StatisticsOps.variance import Variance
-from StatisticsOps.quartile import Quartiles
-
 
 #from Random.random_Op import Random_num;
 
@@ -27,8 +25,5 @@ class Statistics(Calculator):
         self.Result = Variance.variance(data)
         return self.Result
 
-    def quartile(self, data, q, axis, kdims):
-        self.Result = Quartiles.quartile(data, q, axis, kdims)
-        return self.Result
 
 
