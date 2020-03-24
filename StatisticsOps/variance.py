@@ -1,7 +1,8 @@
-from numpy import absolute, asarray
-from StatisticsOps import mean
+from numpy import var
+
 
 class Variance:
     @staticmethod
     def variance(data):
-        return mean.Mean(absolute(asarray(data) - mean.Mean(data))**2)
+        res = var(data)
+        return res
