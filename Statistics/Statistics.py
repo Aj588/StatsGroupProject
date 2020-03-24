@@ -5,9 +5,6 @@ from StatisticsOps.median import Median
 from StatisticsOps.variance import Variance
 from StatisticsOps.quartile import Quartile
 
-#from Random.random_Op import Random_num;
-
-
 class Statistics(Calculator):
 
     def mean(self, data):
