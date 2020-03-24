@@ -4,6 +4,7 @@ from StatisticsOps.mode import Mode
 from StatisticsOps.median import Median
 from StatisticsOps.variance import Variance
 from StatisticsOps.quartile import Quartile
+from StatisticsOps.skew import Skew
 
 class Statistics(Calculator):
 
@@ -25,6 +26,10 @@ class Statistics(Calculator):
 
     def quartile(self, data, q, axis, kdims):
         self.Result = Quartile.quartile(data, q, axis, kdims)
+        return self.Result
+
+    def skew(self, data, axis, bias):
+        self.Result = Skew.skew(data, axis, bias)
         return self.Result
 
 
