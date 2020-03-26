@@ -27,5 +27,6 @@ class MyTestCase(unittest.TestCase):
         result = self.statistics.skew(data, None, None)
         self.assertEqual(2.734386516915545, result)
 
+
 if __name__ == '__main__':
     unittest.main()
