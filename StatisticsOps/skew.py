@@ -1,7 +1,7 @@
-from scipy.stats import skew
+from scipy.stats import stats
 
 
 class Skew:
     @staticmethod
     def skew(data, axis=0, bias=True):
-        return skew(data, axis, bias)
+        return stats.skew(data, axis, bias)

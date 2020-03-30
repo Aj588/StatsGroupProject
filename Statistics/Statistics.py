@@ -6,6 +6,7 @@ from StatisticsOps.variance import Variance
 from StatisticsOps.quartile import Quartile
 from StatisticsOps.skew import Skew
 
+
 class Statistics(Calculator):
 
     def mean(self, data):
@@ -31,7 +32,3 @@ class Statistics(Calculator):
     def skew(self, data, axis, bias):
         self.Result = Skew.skew(data, axis, bias)
         return self.Result
-
-
-
-
