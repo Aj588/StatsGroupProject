@@ -5,7 +5,6 @@ from MathOperations.multiplication import Multiplication
 from MathOperations.root import Root
 
 
-
 class Calculator:
     Result = 0
 
