@@ -1,6 +1,7 @@
 import unittest
 from Statistics.Statistics import Statistics
 
+
 class MyTestCase(unittest.TestCase):
 
     def setUp(self):
@@ -26,6 +27,7 @@ class MyTestCase(unittest.TestCase):
         data = [3, 5, 6, 5, 3, 2, 1, 40]
         result = self.statistics.skew(data, None, None)
         self.assertEqual(2.734386516915545, result)
+
 
 if __name__ == '__main__':
     unittest.main()
